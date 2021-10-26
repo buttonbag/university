@@ -1,0 +1,13 @@
+:root {
+	--primary: #0057b7;
+	--secondary: ##0e4174;
+}
+
+.triangle-container {
+	clip-path: polygon(100% 0, 100% 86%, 65% 100%, 0 86%, 0 0);
+	background: red;
+	overflow: hidden;
+	background: url(https://via.placeholder.com/1920x950) 50% 50% / cover
+		no-repeat;
+	height: 40vh;
+}
