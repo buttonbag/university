@@ -24,6 +24,10 @@
   src: url("/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
   font-weight: normal;
 }
+.container {
+  max-width: 1440px;
+}
+
 #hero-container {
   max-width: 1920px;
 }
@@ -64,6 +68,10 @@
   height: 320px;
   color: #fff;
 }
+#hero-container #text-content .cta a {
+  color: #fff;
+  text-decoration: underline;
+}
 
 .triangles {
   font-family: "Roboto Condensed";
@@ -77,6 +85,7 @@
   color: var(--primary);
 }
 .triangles .text p {
+  font-size: 1.3rem;
   color: #565656;
 }
 .triangles .text .btn {
