@@ -3,6 +3,24 @@
 	--secondary: #0e4174;
 }
 
+@font-face {
+	font-family: 'DIN Pro';
+	src: url('/fonts/DIN_Pro_Font_Family/DIN\ Pro\ Condensed\ Medium\ 500.otf');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'DIN Pro';
+	src: url('/fonts/DIN_Pro_Font_Family/DIN\ Pro\ Condensed\ Bold\ 700.otf');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('/fonts/Roboto/Roboto-Regular.ttf');
+	font-weight: normal;
+}
+
 #hero-container {
 	max-width: 1920px;
 	.triangle-container {
@@ -26,16 +44,23 @@
 			z-index: 100;
 			position: relative;
 			h1 {
+				font-family: 'DIN Pro';
+				font-weight: normal;
+				font-size: 4rem;
 				color: white;
+				text-shadow: 2px 1px rgba(0, 0, 0, 0.5);
 			}
 		}
 		.cta {
+			font-family: 'DIN Pro';
+			font-weight: normal;
+			font-size: 1.56rem;
 			background: var(--secondary);
 			z-index: 80;
 			position: relative;
 			display: flex;
 			align-items: end;
-			height: 350px;
+			height: 320px;
 			color: #fff;
 		}
 	}
