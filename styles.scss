@@ -1,6 +1,7 @@
 :root {
 	--primary: #0057b7;
 	--secondary: #0e4174;
+	--red: #af272f;
 }
 
 @font-face {
@@ -21,12 +22,18 @@
 	font-weight: normal;
 }
 
+@font-face {
+	font-family: 'Roboto Condensed';
+	src: url('/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf');
+	font-weight: normal;
+}
+
 #hero-container {
 	max-width: 1920px;
-	.triangle-container {
+	.chevron {
 		clip-path: polygon(100% 0, 100% 86%, 65% 100%, 0 86%, 0 0);
 		background: red;
-		overflow: hidden;
+		// overflow: hidden;
 		background: url(https://via.placeholder.com/1920x950) 50% 50% / cover
 			no-repeat;
 		height: 40vh;
@@ -47,7 +54,7 @@
 				font-family: 'DIN Pro';
 				font-weight: normal;
 				font-size: 4rem;
-				color: white;
+				color: #fff;
 				text-shadow: 2px 1px rgba(0, 0, 0, 0.5);
 			}
 		}
@@ -63,5 +70,47 @@
 			height: 320px;
 			color: #fff;
 		}
+	}
+}
+
+// triangle page
+.triangles {
+	font-family: 'Roboto Condensed';
+	.text {
+		text-align: center;
+		h2 {
+			font-family: 'DIN Pro';
+			font-size: 2.63rem;
+			color: var(--primary);
+		}
+		p {
+			color: rgba(86, 86, 86, 1);
+		}
+		.btn {
+			color: var(--red);
+			border: 3px solid var(--red);
+			box-shadow: 3px 3px var(--red);
+			border-radius: 0;
+		}
+	}
+}
+.img-right {
+	.text {
+		padding: 5rem 0 5rem 3rem;
+	}
+	.image-content {
+		background: url('https://via.placeholder.com/500x300') 50% 50% / cover
+			no-repeat;
+		clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+	}
+}
+.img-left {
+	.text {
+		padding: 5rem 3rem 5rem 0;
+	}
+	.image-content {
+		background: url('https://via.placeholder.com/500x300') 50% 50% / cover
+			no-repeat;
+		clip-path: polygon(0 0, 80% 0%, 100% 100%, 0 100%);
 	}
 }

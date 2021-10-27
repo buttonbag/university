@@ -1,6 +1,7 @@
 :root {
   --primary: #0057b7;
   --secondary: #0e4174;
+  --red: #af272f;
 }
 
 @font-face {
@@ -18,13 +19,17 @@
   src: url("/fonts/Roboto/Roboto-Regular.ttf");
   font-weight: normal;
 }
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
+  font-weight: normal;
+}
 #hero-container {
   max-width: 1920px;
 }
-#hero-container .triangle-container {
+#hero-container .chevron {
   clip-path: polygon(100% 0, 100% 86%, 65% 100%, 0 86%, 0 0);
   background: red;
-  overflow: hidden;
   background: url(https://via.placeholder.com/1920x950) 50% 50%/cover no-repeat;
   height: 40vh;
   z-index: 90;
@@ -44,7 +49,7 @@
   font-family: "DIN Pro";
   font-weight: normal;
   font-size: 4rem;
-  color: white;
+  color: #fff;
   text-shadow: 2px 1px rgba(0, 0, 0, 0.5);
 }
 #hero-container #text-content .cta {
@@ -58,6 +63,43 @@
   align-items: end;
   height: 320px;
   color: #fff;
+}
+
+.triangles {
+  font-family: "Roboto Condensed";
+}
+.triangles .text {
+  text-align: center;
+}
+.triangles .text h2 {
+  font-family: "DIN Pro";
+  font-size: 2.63rem;
+  color: var(--primary);
+}
+.triangles .text p {
+  color: #565656;
+}
+.triangles .text .btn {
+  color: var(--red);
+  border: 3px solid var(--red);
+  box-shadow: 3px 3px var(--red);
+  border-radius: 0;
+}
+
+.img-right .text {
+  padding: 5rem 0 5rem 3rem;
+}
+.img-right .image-content {
+  background: url("https://via.placeholder.com/500x300") 50% 50%/cover no-repeat;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+}
+
+.img-left .text {
+  padding: 5rem 3rem 5rem 0;
+}
+.img-left .image-content {
+  background: url("https://via.placeholder.com/500x300") 50% 50%/cover no-repeat;
+  clip-path: polygon(0 0, 80% 0%, 100% 100%, 0 100%);
 }
 
 /*# sourceMappingURL=styles.css.map */
