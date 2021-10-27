@@ -1,14 +1,41 @@
 :root {
   --primary: #0057b7;
-  --secondary: ##0e4174;
+  --secondary: #0e4174;
 }
 
-.triangle-container {
+#hero-container {
+  max-width: 1920px;
+}
+#hero-container .triangle-container {
   clip-path: polygon(100% 0, 100% 86%, 65% 100%, 0 86%, 0 0);
   background: red;
   overflow: hidden;
   background: url(https://via.placeholder.com/1920x950) 50% 50%/cover no-repeat;
   height: 40vh;
+  z-index: 90;
+  position: relative;
+}
+#hero-container #text-content {
+  position: relative;
+  top: -150px;
+}
+#hero-container #text-content .hero-title {
+  opacity: 0.75;
+  background: var(--primary);
+  z-index: 100;
+  position: relative;
+}
+#hero-container #text-content .hero-title h1 {
+  color: white;
+}
+#hero-container #text-content .cta {
+  background: var(--secondary);
+  z-index: 80;
+  position: relative;
+  display: flex;
+  align-items: end;
+  height: 350px;
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
