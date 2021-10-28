@@ -45,6 +45,11 @@
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
   }
 }
+@media screen and (max-width: 414px) {
+  #hero-container .chevron {
+    height: 30vh;
+  }
+}
 #hero-container #text-content {
   position: relative;
   top: -150px;
@@ -64,12 +69,22 @@
     flex-wrap: nowrap;
   }
 }
+@media screen and (max-width: 414px) {
+  #hero-container #text-content .hero-text {
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 820px) {
   #hero-container #text-content .hero-text .hero-content {
     padding: 0;
     flex: 0 0 auto;
     max-width: 60%;
     background: rgba(var(--primary));
+  }
+}
+@media screen and (max-width: 414px) {
+  #hero-container #text-content .hero-text .hero-content {
+    max-width: 100%;
   }
 }
 #hero-container #text-content .hero-text .hero-content .hero-title {
@@ -96,6 +111,11 @@
     font-size: 3rem;
   }
 }
+@media screen and (max-width: 414px) {
+  #hero-container #text-content .hero-text .hero-content .hero-title h1 {
+    font-size: 2rem;
+  }
+}
 #hero-container #text-content .cta {
   font-family: "DIN Pro";
   font-weight: normal;
@@ -119,6 +139,11 @@
     max-width: 40% !important;
     height: auto;
     align-items: center;
+  }
+}
+@media screen and (max-width: 414px) {
+  #hero-container #text-content .cta {
+    max-width: 100% !important;
   }
 }
 #hero-container #text-content .cta p {

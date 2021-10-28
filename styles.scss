@@ -53,6 +53,9 @@
 		@include screen-max(820px) {
 			clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
 		}
+		@include screen-max(414px) {
+			height: 30vh;
+		}
 	}
 
 	// text content
@@ -71,12 +74,19 @@
 				max-width: 100%;
 				flex-wrap: nowrap;
 			}
+			@include screen-max(414px) {
+				flex-wrap: wrap;
+			}
+
 			.hero-content {
 				@include screen-max(820px) {
 					padding: 0;
 					flex: 0 0 auto;
 					max-width: 60%;
 					background: rgba(var(--primary));
+				}
+				@include screen-max(414px) {
+					max-width: 100%;
 				}
 				.hero-title {
 					background: rgba(var(--primary), 0.75);
@@ -95,6 +105,9 @@
 						text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 						@include screen-max(1200px) {
 							font-size: 3rem;
+						}
+						@include screen-max(414px) {
+							font-size: 2rem;
 						}
 					}
 				}
@@ -119,6 +132,9 @@
 				max-width: 40% !important;
 				height: auto;
 				align-items: center;
+			}
+			@include screen-max(414px) {
+				max-width: 100% !important;
 			}
 			p {
 				margin: 0;
