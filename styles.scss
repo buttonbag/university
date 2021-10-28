@@ -198,6 +198,9 @@ $screen-sm: 414px;
 
 		@include screen-max($screen-md) {
 			clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+			padding: 10rem;
+		}
+		@include screen-max($screen-sm) {
 			padding: 5rem;
 		}
 	}
@@ -216,6 +219,9 @@ $screen-sm: 414px;
 
 		@include screen-max($screen-md) {
 			clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+			padding: 10rem;
+		}
+		@include screen-max($screen-sm) {
 			padding: 5rem;
 		}
 	}

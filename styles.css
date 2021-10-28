@@ -205,6 +205,11 @@
 @media screen and (max-width: 820px) {
   .img-right .image-content {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    padding: 10rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  .img-right .image-content {
     padding: 5rem;
   }
 }
@@ -224,6 +229,11 @@
 @media screen and (max-width: 820px) {
   .img-left .image-content {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    padding: 10rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  .img-left .image-content {
     padding: 5rem;
   }
 }
